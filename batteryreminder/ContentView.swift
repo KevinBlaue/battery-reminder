@@ -7,13 +7,20 @@
 
 import SwiftUI
 
+func test() -> Void {
+    print("Das ist ein Test")
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
-                .foregroundColor(.accentColor)
+                .foregroundColor(.red)
             Text("Hello, world!")
+            Button("I do something") {
+                test()
+            }
         }
         .padding()
     }
